@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Dec 30 18:14:52 SGT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-018c-ba38-2bed-00000c92a528 
+on database directory C:\Users\Brandon\OneDrive - Sunway Education Group\Sunway Files\OOP\Assignment 3\myDB with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/Brandon/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_361-b09
+user.dir=C:\Users\Brandon\OneDrive - Sunway Education Group\Sunway Files\OOP\Assignment 3
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

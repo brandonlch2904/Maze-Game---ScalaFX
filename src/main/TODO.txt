@@ -1,0 +1,4 @@
+1. Change theme
+2. Save movement count to database and display in scoreboard (Done)
+3. Implement function for exit button
+4. Implement change skin function

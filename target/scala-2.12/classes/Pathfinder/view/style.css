@@ -1,0 +1,159 @@
+.anchor-pane {
+    -fx-background-color: #192841;
+}
+
+.dungeon-background {
+    -fx-background-image: url('../images/dungeon.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.grid-pane {
+    -fx-padding: 20;
+}
+
+.label-white {
+    -fx-text-fill: #e0e0e0;
+}
+
+.text-field, .password-field {
+    -fx-font-size: 18;
+    -fx-padding: 5;
+}
+
+.button {
+    -fx-font-size: 16;
+    -fx-padding: 10 20;
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45a049);
+    -fx-text-fill: white;
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #45a049, #4CAF50);
+    -fx-border-color: #45a049;
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.password-field {
+    -fx-background-radius: 5;
+}
+
+.button {
+    -fx-background-radius: 5;
+}
+
+.button:focused {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45a049);
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 1;
+}
+
+.dialog-pane {
+    -fx-background-color: #3498db;
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #3498db;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 18;
+    -fx-font-italic: true;
+    -fx-border-color: #2c3e50;
+    -fx-border-width: 0 0 3 0;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 1.5em;
+}
+
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 20;
+    -fx-line-spacing: 8;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button-bar {
+    -fx-background-color: #3498db;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#192841,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#192841,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.image-border {
+    -fx-border-color: white;
+    -fx-border-width: 5;
+    -fx-border-style: solid;
+}
+
+.table-view {
+    -fx-background-color: #456abb;
+    -fx-base: #456abb;
+    -fx-control-inner-background: #456abb;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+}
+
+.table-column {
+    -fx-background-color: #456abb;
+}
+
+.table-column .label {
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+}
+
+.table-view .column-header .label {
+    -fx-background-color: #2c3e50;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 20;
+}
+
+.table-cell {
+    -fx-font-size: 16;
+    -fx-alignment: CENTER;
+}
+
+.vbox {
+    -fx-spacing: 20;
+    -fx-padding: 40;
+}

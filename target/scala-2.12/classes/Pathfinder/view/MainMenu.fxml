@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="835.0" prefWidth="822.0" styleClass="dungeon-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pathfinder.view.MainMenuController">
+   <center>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="848.0" prefWidth="882.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="274.0" layoutY="405.0" prefHeight="321.0" prefWidth="276.0" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="405.0">
+               <children>
+                  <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="52.0" prefWidth="423.0" text="Start">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLeaderboardButton" prefHeight="52.0" prefWidth="423.0" text="Leaderboard">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleQuit" prefHeight="52.0" text="Quit">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="156.0" fitWidth="664.0" layoutX="79.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/PathfinderTitle3.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="189.0" layoutY="156.0" prefHeight="253.0" prefWidth="442.0" styleClass="image-border">
+               <children>
+                  <ImageView fitHeight="243.0" fitWidth="428.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pathfinder.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pathfinder.view.GameOverController">
+   <children>
+      <Label alignment="CENTER" layoutX="147.0" prefHeight="120.0" prefWidth="306.0" styleClass="label-white" text="Well Done!">
+         <font>
+            <Font name="Bernard MT Condensed" size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="180.0" layoutY="290.0" mnemonicParsing="false" onAction="#returnToMainMenu" prefHeight="0.0" prefWidth="241.0" text="Return to Main Menu" />
+      <Button layoutX="232.0" layoutY="219.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="34.0" prefWidth="136.0" text="Retry" />
+      <Label layoutX="201.0" layoutY="120.0" styleClass="label-white" text="Current Score:">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="159.0" styleClass="label-white" text="Highest Score:">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentScore" alignment="CENTER" layoutX="345.0" layoutY="120.0" styleClass="label-white" text="Label">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="highestScore" layoutX="345.0" layoutY="159.0" styleClass="label-white" text="Label">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

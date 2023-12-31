@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainGameRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="835.0" prefWidth="822.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pathfinder.view.MainGameController">
+   <center>
+      <GridPane fx:id="maze" alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="pathfinderObject" fitHeight="66.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/PathfinderObject.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="89.0" fitWidth="122.0" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="104.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="102.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="108.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="110.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="115.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="101.0" fitWidth="122.0" pickOnBounds="true" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="99.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="99.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="99.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="99.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="102.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="103.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="105.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="104.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="101.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="102.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="98.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="107.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="102.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exitImage" fitHeight="100.0" fitWidth="118.0" pickOnBounds="true" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="100.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="wallImage" fitHeight="102.0" fitWidth="122.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../images/wall.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="165.0" prefWidth="822.0" styleClass="dungeon-background" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="313.0" layoutY="14.0" styleClass="label-white" text="Movements:">
+               <font>
+                  <Font name="Bernard MT Condensed" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="movementCounter" alignment="CENTER" contentDisplay="CENTER" layoutX="395.0" layoutY="60.0" prefHeight="45.0" prefWidth="32.0" styleClass="label-white" text="0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="390.0">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="341.0" layoutY="105.0" mnemonicParsing="false" onAction="#resetGame" prefHeight="49.0" prefWidth="140.0" text="Reset ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
